@@ -10,6 +10,10 @@
                 background-color: #3C3D37;
                 display: flex;
                 justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+                height: 1250px;
             }
 
             .container {
@@ -89,6 +93,44 @@
                 }
             }
 
+            .aid {
+                transform: translateY(93px);
+                animation-name: tb;
+                animation-duration: 4s;
+                animation-delay: 2s;
+                animation-iteration-count: 2;
+                animation-timing-function: ease-in;
+            }
+
+            @keyframes tb {
+                0% {
+                    transform: translateY(93px);
+                }
+                50% {
+                    transform: translateY(-20px);
+                }
+                100% {
+                    transform: translateY(93px);
+                }
+            }
+
+            .texttop {
+                transform: translateY(0px);
+                animation-name: bounce;
+                animation-delay: 4s;
+                animation-iteration-count: 2;
+                animation-duration: 4s;
+                animation-timing-function: ease-in-out;
+            }
+
+            @keyframes bounce {
+                0% {transform: translateY(0px);}
+                50% {transform: translateY(-100px);}
+                100% {transform: translateY(0px);}
+            }
+
+            
+
         </style>
     </head>
     <body>
@@ -100,6 +142,16 @@
             <div class="parts">
                 <div class="text">Animations</div>
                 <div class="box animation"></div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="parts">
+                <div class="text texttop">Top to Bottom</div>
+                <div class="box aid"></div>
+            </div>
+            <div class="parts">
+                <div class="text">Combination</div>
+                <div class="box cat"></div>
             </div>
         </div> 
     </body>
