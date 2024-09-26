@@ -13,7 +13,7 @@
                 flex-direction: column;
                 align-items: center;
                 justify-content: space-evenly;
-                height: 1250px;
+                height: 1750px;
             }
 
             .container {
@@ -140,6 +140,27 @@
                 transform: rotate(180deg);
             }
 
+            .bonus {
+                width: 150px;
+                height: 150px;
+                margin-top: -80px;
+                border-radius: 10px;
+                position: relative;
+                animation-name: bon;
+                animation-duration: 6s;
+                animation-iteration-count: infinite;
+                animation-timing-function: linear;
+            }
+
+            @keyframes bon {
+                0% {
+                    transform: rotate(0deg) translateX(120px);
+                }
+                100% {
+                    transform: rotate(360deg) translateX(120px);
+                }
+            }
+
 
         </style>
     </head>
@@ -162,6 +183,12 @@
             <div class="parts">
                 <div class="text">Combination</div>
                 <div class="box cat"></div>
+            </div>
+        </div> 
+        <div class="container">
+            <div class="parts">
+                <div class="text">Bonus</div>
+                <div class="box bonus"></div>
             </div>
         </div> 
     </body>
