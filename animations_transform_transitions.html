@@ -110,7 +110,7 @@
                 animation-delay: 4s;
                 animation-iteration-count: 2;
                 animation-duration: 4s;
-                animation-timing-function: ease-in-out;
+                animation-timing-function: ease-out;
             }
 
             @keyframes bounce {
@@ -137,7 +137,7 @@
                 margin-top: -80px;
                 border-radius: 10px;
                 position: relative;
-                animation-name: bon, bon2;
+                animation-name: bon;
                 animation-duration: 6s;
                 animation-iteration-count: infinite;
                 animation-timing-function: linear;
@@ -146,14 +146,6 @@
             @keyframes bon {
                 0% {
                     transform: rotate(0deg) translateX(120px);
-                }
-                100% {
-                    transform: rotate(360deg) translateX(120px);
-                }
-            }
-
-            @keyframes bon2 {
-                0% {
                     background-color: #697565;
                 }
                 25% {
@@ -166,9 +158,11 @@
                     background-color: #ECDFCC;
                 }
                 100% {
+                    transform: rotate(360deg) translateX(120px);
                     background-color: #697565;
                 }
             }
+
 
 
         </style>
